@@ -14,3 +14,5 @@ ReactDOM.render(
     <Provider store = {store}><App /></Provider>, 
     document.querySelector('#root')
 );
+
+console.log("STRIPE KEY is ", process.env.REACT_APP_STRIPE_KEY);
