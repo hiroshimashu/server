@@ -5,11 +5,13 @@ import * as actions from "../actions";
 
 class Payments extends Component {
     render() {
+        console.log(process.env.REACT_APP_STRIPE_KEY)
         return (
             <StripeCheckout 
                 name =  "Emaily"
                 description =  "$5 for 5 emaily credit"
-                amount = { 500 }
+                amount = { 5000 }
+                currency = 'USD'
                 token = { token => this.props.handleToken(token) }
                 stripeKey = { process.env.REACT_APP_STRIPE_KEY }
             >
