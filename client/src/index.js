@@ -7,6 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import reduxThunk from "redux-thunk";
 
 import App from "./components/App";
+// Development only axios helper
 import axios from 'axios';
 window.axios = axios;
 
